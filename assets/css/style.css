@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#grill-container{
+    display: grid;
+    grid-template-columns: 20% 50% 30% ;
+    grid-template-rows: repeat(3,100%) ;
+    /* gap pour espacer les grilles */
+    /* Repeat 3 pour repeté pour 3 colones et 3 lignes pour le rows */
+}
+.header, .footer, .main, .right, .menu{
+    background-color: #ffcccc;
+    border: solid 1px red;
+}
+
+.header{
+    grid-area: 1/1/1/4;
+}
+.menu{
+    grid-area: 2/1/4/1 ;
+}
+
+.footer{
+    grid-area: 3/2/3/4;
+}
+.main{
+    grid-area: 2/2/2/3;
+}
+
+.right{
+    grid-area: 2/3/2/3;
+}
